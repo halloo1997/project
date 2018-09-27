@@ -1,0 +1,78 @@
+/*Reset padding en margin*/
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+
+/****** HEADER ******/
+header{
+	background-color: #b7e1cd;
+}
+
+.logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/****** NAVIGATION ******/
+.nav-bar{
+	margin-top: 5px;
+	background-color: #ffffff;
+	border-top: solid 1.5px;  
+	border-bottom: solid 1.5px;  
+	overflow: hidden;
+}
+
+.nav-bar-item{
+	float: left;
+	text-align: center;
+	display: block;
+	border-right: solid 1.5px; 
+	list-style-type: none;
+	width: 25%; /* 100(width nav-bar) / 4 (items) = 25 */
+}
+
+.nav-bar-item a{
+	text-transform: uppercase;
+	text-decoration: none;
+	color: black;
+	display: block;
+	padding: 15px;
+	transition: 1s; 
+}
+
+.nav-bar-item a:hover{
+	background-color: red;
+}
+
+.container{
+	margin: 50px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.box{
+	border: solid 1.5px;
+	padding: 45px;
+	margin: 10px;
+}
+
+
+/* Gebruik clearfix na een float om problemen te fixen. */
+.clearfix::after{
+	content: " "; 
+	clear: both;
+	display: block;
+}
+
+
+.wip{
+	text-align: center;
+}
+.wip::after{
+	font-size: 30px;
+	content: "(╯°□°）╯︵ *WIP*";
